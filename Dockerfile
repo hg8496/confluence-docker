@@ -17,10 +17,10 @@ RUN mv /opt/confluence/conf/server.xml /opt/confluence/conf/server-backup.xml
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /confluence.tar.gz 
 
 ENV CONTEXT_PATH ROOT
-ENV DATABASE_URL ""
 ENV SSL_PROXY ""
 ENV CONFLUENCE_HOME /opt/atlassian-home
 
+RUN echo -e "\nconfluence.home=${CONFLUENCE_HOME}" >> "/opt/confluence/confluence/WEB-INF/classes/confluence-init.properties"
 ADD launch.bash /launch
 
 WORKDIR /opt/confluence
