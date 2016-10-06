@@ -7,7 +7,7 @@ ENV CONFLUENCE_DOWNLOAD_URL http://www.atlassian.com/software/confluence/downloa
 ENV MYSQL_VERSION 5.1.38
 ENV MYSQL_DRIVER_DOWNLOAD_URL http://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-${MYSQL_VERSION}.tar.gz
 
-RUN curl -Lks "${CONFLUENCE_DOWNLOAD_URL}" -o /confluence.tar.gz
+RUN curl -Lks "${CONFLUENCE_DOWNLOAD_URL}" -o /confluence.tar.gz 
 RUN mkdir -p /opt/confluence
 RUN tar zxf /confluence.tar.gz --strip=1 -C /opt/confluence
 
