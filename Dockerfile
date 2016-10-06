@@ -1,7 +1,7 @@
 FROM hg8496/atlassian-docker
 MAINTAINER hg8496@cstolz.de
 
-ENV CONF_VERSION 5.10.6
+ENV CONF_VERSION 5.10.7
 ENV CONFLUENCE_DOWNLOAD_URL http://www.atlassian.com/software/confluence/downloads/binary/atlassian-confluence-${CONF_VERSION}.tar.gz
 
 ENV MYSQL_VERSION 5.1.38
