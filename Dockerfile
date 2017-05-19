@@ -4,7 +4,7 @@ MAINTAINER hg8496@cstolz.de
 ENV CONF_VERSION 5.9.14
 ENV CONFLUENCE_DOWNLOAD_URL http://www.atlassian.com/software/confluence/downloads/binary/atlassian-confluence-${CONF_VERSION}.tar.gz
 
-ENV MYSQL_VERSION 5.1.38
+ENV MYSQL_VERSION 5.1.42
 ENV MYSQL_DRIVER_DOWNLOAD_URL http://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-${MYSQL_VERSION}.tar.gz
 
 RUN curl -Lks "${CONFLUENCE_DOWNLOAD_URL}" -o /confluence.tar.gz 
